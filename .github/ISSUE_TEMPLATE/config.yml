@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Feature ideas and voting
+    url: https://apexdiagram.com/community
+    about: Propose and vote on ideas on the ApexDiagram community board.
+  - name: Report a security vulnerability
+    url: mailto:security@apexdiagram.com
+    about: Please email security issues privately instead of opening a public issue.

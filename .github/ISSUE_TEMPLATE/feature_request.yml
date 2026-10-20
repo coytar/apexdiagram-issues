@@ -1,0 +1,64 @@
+name: Feature request
+description: Suggest something ApexDiagram should do.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ideas are also welcome on the [community board](https://apexdiagram.com/community), where other users can vote on them. Use this form if you prefer to track the request here.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the situation, not the solution. What are you doing and where does it get hard?
+      placeholder: I manage three sites and have to redraw the same core switch stack in each diagram.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like ApexDiagram to do?
+      placeholder: Let me save a group of devices as a reusable template.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: How do you handle this today?
+      description: Workarounds, other tools, or nothing at all.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Canvas and diagramming
+        - Devices, racks and links
+        - Virtual machines and clusters
+        - Assets and inventory
+        - Lint and assistant rules
+        - Sharing, comments and access
+        - Import and export
+        - Account, billing and sign-in
+        - Admin and organisation settings
+        - Integrations and API
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How important is this to you?
+      options:
+        - I would switch tools over it
+        - Would make a real difference to my work
+        - Nice to have
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues and the community board for this idea.
+          required: true
